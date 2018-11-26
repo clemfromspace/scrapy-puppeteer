@@ -1,0 +1,18 @@
+env:
+  global:
+  - CODECLIMATE_REPO_TOKEN=a47935830d841ad61a6e960be8a3b6a5e557146ac010dafa993e61bf82898472
+
+language: python
+
+python:
+- 3.7
+
+install:
+- pip install -r requirements/requirements-test.txt
+
+script:
+- pytest --cov-config .coveragerc --cov=scrapy_puppeteer tests/
+- codeclimate-test-reporter
+
+notifications:
+  email: false
