@@ -1,5 +1,5 @@
 # Scrapy with Puppeteer
-[![PyPI](https://img.shields.io/pypi/v/scrapy-puppeteer.svg)](https://pypi.python.org/pypi/scrapy-puppeteer) [![Build Status](https://travis-ci.org/clemfromspace/scrapy-puppeteer.svg?branch=master)](https://travis-ci.org/clemfromspace/scrapy-puppeteer) [![Test Coverage](https://api.codeclimate.com/v1/badges/5c737098dc38a835ff96/test_coverage)](https://codeclimate.com/github/clemfromspace/scrapy-puppeteer/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/5c737098dc38a835ff96/maintainability)](https://codeclimate.com/github/clemfromspace/scrapy-puppeteer/maintainability)
+[![PyPI](https://img.shields.io/pypi/v/scrapy-puppeteer.svg)](https://pypi.python.org/pypi/scrapy-puppeteer) [![Build Status](https://travis-ci.org/clemfromspace/scrapy-puppeteer.svg?branch=master)](https://travis-ci.org/clemfromspace/scrapy-puppeteer) [![Test Coverage](https://api.codeclimate.com/v1/badges/86603b736e684dd4f8c9/test_coverage)](https://codeclimate.com/github/clemfromspace/scrapy-puppeteer/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/86603b736e684dd4f8c9/maintainability)](https://codeclimate.com/github/clemfromspace/scrapy-puppeteer/maintainability)
 
 Scrapy middleware to handle javascript pages using [puppeteer](https://github.com/GoogleChrome/puppeteer).
 
