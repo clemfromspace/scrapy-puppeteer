@@ -31,7 +31,8 @@ class ScrapyPuppeteerTestCase(TestCase):
 
         def start_requests(self):
             yield scrapy_puppeteer.PuppeteerRequest(
-                'https://codesandbox.io/search?page=1'
+                'https://codesandbox.io/search?page=1',
+                wait_until='networkidle0'
             )
 
         def parse(self, response):
