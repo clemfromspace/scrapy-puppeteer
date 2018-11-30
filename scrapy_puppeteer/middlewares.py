@@ -24,7 +24,7 @@ class PuppeteerMiddleware:
         """Start the browser"""
 
         middleware = cls()
-        middleware.browser = await launch()
+        middleware.browser = await launch({'logLevel': crawler.settings.get('LOG_LEVEL')})
         crawler.signals.connect(middleware.spider_closed, signals.spider_closed)
 
         return middleware
@@ -73,6 +73,9 @@ class PuppeteerMiddleware:
                 'waitUntil': request.wait_until
             },
         )
+
+        if request.wait_for:
+            await page.waitFor(request.wait_for)
 
         if request.screenshot:
             request.meta['screenshot'] = await page.screenshot()

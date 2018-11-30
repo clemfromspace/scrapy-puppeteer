@@ -28,7 +28,12 @@ def get_requirements(source):
 
 setup(
     packages=find_packages(),
-    install_requires=get_requirements('requirements/requirements.txt')
+    install_requires=get_requirements('requirements/requirements.txt'),
+    entry_points={
+        'console_scripts': [
+            'scrapyp = scrapy_puppeteer.cli:__main__',
+        ],
+    }
 )
 
 
