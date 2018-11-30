@@ -11,6 +11,7 @@ Scrapy = ">=1.0.0"
 ipdb = "*"
 asynctest = "*"
 pytest = "*"
+twine = "*"
 
 [requires]
 python_version = "3.6"

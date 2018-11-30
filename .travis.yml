@@ -1,11 +1,11 @@
 env:
   global:
-  - CODECLIMATE_REPO_TOKEN=a47935830d841ad61a6e960be8a3b6a5e557146ac010dafa993e61bf82898472
+  - CODECLIMATE_REPO_TOKEN=5a52609c6ab7d746d6f6a33583d9b40a7d1b78ae16734b5fd269e3027a27bf0a
 
 language: python
 
 python:
-- 3.7
+- 3.6
 
 install:
 - pip install -r requirements/requirements-test.txt
