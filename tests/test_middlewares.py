@@ -32,7 +32,7 @@ class ScrapyPuppeteerTestCase(TestCase):
         def start_requests(self):
             yield scrapy_puppeteer.PuppeteerRequest(
                 'https://codesandbox.io/search?page=1',
-                wait_until='networkidle0'
+                wait_until='networkidle2'
             )
 
         def parse(self, response):
@@ -48,4 +48,4 @@ class ScrapyPuppeteerTestCase(TestCase):
     def test_items_number(self):
         crawler = self.runner.create_crawler(self.PuppeteerSpider)
         yield crawler.crawl()
-        self.assertEqual(len(crawler.spider.items), 10)
+        self.assertEqual(len(crawler.spider.items), 12)
